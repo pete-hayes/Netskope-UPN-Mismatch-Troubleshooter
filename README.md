@@ -39,7 +39,7 @@ Lookup value: example@example.com
 Searching by userName
 Searching by emails
 USER FOUND BY EMAIL
-UPN MISMATCH
+UPN MISMATCH DETECTED
 Lookup UPN      : example@example.com
 Provisioned UPN : example@example.net
 ```
