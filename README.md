@@ -3,6 +3,11 @@ The Netskope Client automatic enrollment mode with Windows requires the username
 
 In some environments, a mismatch can occur where the Windows logon name does not align with the value provisioned to Netskope. For example, a user may log in with an ID like `emp0123457`, while Netskope is provisioned with their email address. This tool detects this condition, commonly referred to as a UPN mismatch, and helps confirm when the Netskope userName attribute should be mapped to a different directory attribute.
 
+## Features
+- Automatically validates the logged in user’s User Principal Name (UPN) against the `userName` attribute provisioned in Netskope
+- Detects and reports when a user is found via email but does not match the provisioned `userName` value, indicating a UPN mismatch
+- Reports when a user cannot be found in Netskope using either the `userName` or `emails` attributes
+
 ## Requirements
 - PowerShell 5.1 or newer
 - Access to the Netskope SCIM API
