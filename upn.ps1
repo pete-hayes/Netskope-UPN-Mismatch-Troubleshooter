@@ -60,7 +60,7 @@ if ($resp.totalResults -gt 0) {
     $provisioned = $resp.Resources[0].userName
 
     Write-Host "USER FOUND BY EMAIL"
-    Write-Host "UPN MISMATCH"
+    Write-Host "UPN MISMATCH DETECTED"
     Write-Host "Lookup UPN      : $lookup"
     Write-Host "Provisioned UPN : $provisioned"
 
