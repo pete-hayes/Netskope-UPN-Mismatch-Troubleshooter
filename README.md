@@ -1,4 +1,7 @@
 # Netskope UPN Mismatch Troubleshooter
+The Netskope Client automatic enrollment mode with Windowsrequires the username of the logged in user to match the value provisioned to Netskope from the directory source, such as Entra ID or Active Directory.
+
+In some environments, a mismatch can occur where the Windows logon name does not align with the value provisioned to Netskope. For example, a user may log in with an ID like `emp0123457`, while Netskope is provisioned with their email address. This tool detects this condition, commonly referred to as a UPN mismatch, and helps confirm when the Netskope userName attribute should be mapped to a different directory attribute.
 
 ## Requirements
 - PowerShell 5.1 or newer
@@ -7,11 +10,11 @@
 
 ## Usage
 
-### Validate Logged-In User
+### Automatically Validate Logged-In User
 1. Clone or download this repository.
 2. `.\upn.ps1 -TenantDomain example.goskope.com -ApiKey <SCIM_API_KEY>`
 
-### Validate User-Provided Username
+### Manual Validation
 1. Clone or download this repository.
 2. `.\upn.ps1 -TenantDomain example.goskope.com -ApiKey <SCIM_API_KEY> -Username example@example.com`
 
