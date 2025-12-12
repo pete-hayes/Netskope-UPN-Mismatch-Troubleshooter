@@ -17,11 +17,11 @@ In some environments, a mismatch can occur where the Windows logon name does not
 
 ### Automatically Validate Logged-In User
 1. Clone or download this repository.
-2. `.\upn.ps1 -TenantDomain example.goskope.com -ApiKey <SCIM_API_KEY>`
+2. `.\upn.ps1 -TenantDomain example.goskope.com -ApiKey <API_TOKEN>`
 
 ### Manual Validation
 1. Clone or download this repository.
-2. `.\upn.ps1 -TenantDomain example.goskope.com -ApiKey <SCIM_API_KEY> -Username example@example.com`
+2. `.\upn.ps1 -TenantDomain example.goskope.com -ApiKey <API_TOKEN> -Username example@example.com`
 
 ## Example Outputs
 
