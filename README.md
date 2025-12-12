@@ -16,11 +16,13 @@ In some environments, a mismatch can occur where the Windows logon username does
 ## Usage
 
 ### Automatically Validate Logged-In User
-1. Clone or download this repository.
+1. Clone or download this repository, e.g., 
+    - `Invoke-WebRequest -Uri https://raw.githubusercontent.com/pete-hayes/Netskope-UPN-Mismatch-Troubleshooter/main/upn.ps1 -OutFile upn.ps1`
 2. `.\upn.ps1 -TenantDomain example.goskope.com -ApiKey <API_TOKEN>`
 
 ### Manual Validation
-1. Clone or download this repository.
+1. Clone or download this repository, e.g., 
+    - `Invoke-WebRequest -Uri https://raw.githubusercontent.com/pete-hayes/Netskope-UPN-Mismatch-Troubleshooter/main/upn.ps1 -OutFile upn.ps1`
 2. `.\upn.ps1 -TenantDomain example.goskope.com -ApiKey <API_TOKEN> -Username example@example.com`
 
 ## Example Outputs
