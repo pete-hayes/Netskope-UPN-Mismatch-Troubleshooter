@@ -1,7 +1,7 @@
 # Netskope UPN Mismatch Troubleshooter
 The Netskope Client automatic enrollment mode with Windows requires the username of the logged in user to match the value provisioned to Netskope from the directory source, such as Entra ID or Active Directory.
 
-In some environments, a mismatch can occur where the Windows logon username does not align with the value provisioned to Netskope. For example, a user may log in with an ID like `emp0123457`, while Netskope is provisioned with their email address (emp0123457@example.com versus example.example@example.com). This tool detects this condition, commonly referred to as a UPN mismatch, and helps confirm when the Netskope userName attribute should be mapped to a different directory attribute.
+In some environments, a mismatch can occur where the Windows logon username does not align with the value provisioned to Netskope. For example, a user may log in with an ID like `emp0123457`, while Netskope is provisioned with their email address (e.g., emp0123457@example.com versus example.example@example.com). This tool detects this condition, commonly referred to as a UPN mismatch, and helps confirm when the Netskope userName attribute should be mapped to a different directory attribute.
 
 ## Features
 - Automatically validates the logged in user’s User Principal Name (UPN) against the `userName` attribute provisioned in Netskope
