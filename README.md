@@ -23,7 +23,7 @@ The script will automatically retrieve the logged-in username (using the `whoami
 2. `.\upn.ps1 -TenantDomain example.goskope.com -ApiKey <API_TOKEN>`
 
 ### Manual Validation
-The script will validate a provided username and compare against that provisioned to Netskope.
+The script will validate a provided username and compare against that provisioned to Netskope, useful for diagnosing UPN mismatch issues remotely after being provided a `whoami /upn` output.
 
 1. Clone or download this repository, e.g., 
     - `Invoke-WebRequest -Uri https://raw.githubusercontent.com/pete-hayes/Netskope-UPN-Mismatch-Troubleshooter/main/upn.ps1 -OutFile upn.ps1`
