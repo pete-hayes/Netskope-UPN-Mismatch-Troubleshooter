@@ -16,7 +16,7 @@ In some environments, a mismatch can occur where the Windows logon username does
 ## Usage
 
 ### Automatically Validate Logged-In User
-The script will automatically retrieve the logged-in username (using the command 'whoami /upn') and compare against that provisioned to Netskope.
+The script will automatically retrieve the logged-in username (using the `whoami /upn` command) and compare against that provisioned to Netskope.
 
 1. Clone or download this repository, e.g., 
     - `Invoke-WebRequest -Uri https://raw.githubusercontent.com/pete-hayes/Netskope-UPN-Mismatch-Troubleshooter/main/upn.ps1 -OutFile upn.ps1`
