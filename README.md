@@ -9,9 +9,11 @@ In some environments, a mismatch can occur where the Windows logon username does
 - Reports when a user cannot be found in Netskope using either the `userName` or `emails` attributes
 
 ## Requirements
+- Windows 10 or newer
 - PowerShell 5.1 or newer
 - Access to the Netskope SCIM API
-- A Netskope SCIM API token with permission to read Users & Groups.
+- A Netskope SCIM API token with permission to read Users & Groups
+- Logged-on domain user (for automatic validation method)
 
 ## Usage
 
